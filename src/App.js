@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Layout from './components/Layout/Layout';
 
 function App() {
 	return (
-		<div className="App">
-			<h1 className="text-success">My Portfolio Site</h1>
-		</div>
+		<>
+			<Layout />
+		</>
 	);
 }
 
