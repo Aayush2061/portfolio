@@ -4,6 +4,7 @@ import { GoSidebarExpand } from "react-icons/go";
 import { GoSidebarCollapse } from "react-icons/go";
 import { useState } from 'react';
 import "./layout.css"
+import Menus from '../Menus/Menus';
 const Layout = () => {
     const [toggle, setToggle] = useState(true);
 
@@ -23,6 +24,7 @@ const Layout = () => {
 
                         </p>
                     </div>
+                    <Menus toggle={toggle} />
                 </div>
                 <div className='container'>
                     <Home />
