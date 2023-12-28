@@ -3,7 +3,7 @@ import "./Projects.css"
 const Projects = () => {
     return (
         <>
-            <div className="container projects">
+            <div className="container projects" id='projects'>
                 <h2 className='col-12 mt-3 mb-1 text-center text-uppercase'>Top Recent Projects</h2>
                 <hr />
                 <p className='pb-3 text-center'>
