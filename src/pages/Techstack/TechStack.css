@@ -32,3 +32,16 @@
     transition: 1s;
 
 }
+
+#dark .media {
+    color: black;
+}
+
+#dark .techstack .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #138781;
+    color: white;
+    /* border: none; */
+    transition: 1s;
+
+}

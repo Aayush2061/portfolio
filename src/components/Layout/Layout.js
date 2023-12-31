@@ -5,6 +5,7 @@ import { GoSidebarCollapse } from "react-icons/go";
 import { useState } from 'react';
 import "./layout.css"
 import Menus from '../Menus/Menus';
+import ParticlesBackground from '../tsparticles/ParticlesBackground';
 const Layout = () => {
     const [toggle, setToggle] = useState(true);
 
@@ -24,6 +25,7 @@ const Layout = () => {
 
                         </p>
                     </div>
+                    {/* <ParticlesBackground /> */}
                     <Menus toggle={toggle} />
                 </div>
                 <div className='container'>
