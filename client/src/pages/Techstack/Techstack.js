@@ -14,8 +14,8 @@ const Techstack = () => {
                 </Jump>
                 <div className="row">
                     {TechStackList.map((tech) => (
-                        <Fade left>
-                            <div key={tech._id} className='col-md-3'>
+                        <Fade key={tech._id} left>
+                            <div className='col-md-3'>
                                 <div className="card mt-2">
                                     <div className="card-content">
                                         <div className="card-body">

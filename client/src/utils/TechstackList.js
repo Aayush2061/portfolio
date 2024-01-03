@@ -25,44 +25,44 @@ export const TechStackList = [
     }
     ,
     {
-        _id: 5,
+        _id: 4,
         name: 'Javascript',
         icon: IoLogoJavascript,
     },
     {
-        _id: 6,
+        _id: 5,
         name: 'jQuery',
         icon: IoLogoJavascript,
     },
     {
-        _id: 7,
+        _id: 6,
         name: 'React JS',
         icon: RiReactjsFill,
     }
     ,
     {
-        _id: 8,
+        _id: 7,
         name: 'React MUI',
         icon: SiMui,
     },
     {
-        _id: 9,
+        _id: 8,
         name: 'Node JS',
         icon: FaNodeJs,
     },
     {
-        _id: 10,
+        _id: 9,
         name: 'Express JS',
         icon: SiExpress,
     },
     {
-        _id: 11,
+        _id: 10,
         name: 'Mongodb',
         icon: SiMongodb,
     }
     ,
     {
-        _id: 12,
+        _id: 11,
         name: 'Git/Github',
         icon: FaGithub,
     }
