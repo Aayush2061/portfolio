@@ -1,5 +1,6 @@
 .techstack {
-    margin-top: 40px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     margin-left: 50px;
     padding-left: -10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -43,5 +44,22 @@
     color: white;
     /* border: none; */
     transition: 1s;
+}
 
+/* ==============responsive=============== */
+@media(max-width:600px){
+    .techstack{
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 50px;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+    .techstack hr{
+        width: 300px;
+    }
+    .techstack hr{
+        margin-bottom: 10px;
+    }
 }

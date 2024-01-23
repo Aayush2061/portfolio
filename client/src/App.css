@@ -12,3 +12,16 @@
     /* Ensure padding doesn't add to the width */
     /* Other styles */
 }
+
+
+@media(max-width:600px){
+    .container{
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+    }
+    .footer{
+        margin: 0;
+        padding: 0;
+    }
+}

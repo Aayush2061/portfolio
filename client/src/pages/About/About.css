@@ -45,3 +45,18 @@
     color: #b0a0a4;
     border-bottom: 2px solid #b0b0b0;
 }
+
+/* ============================== */
+@media(max-width:600px){
+    .about{
+        margin: 0;
+        width: 100vw;
+    }
+    .about-content{
+        margin-top: 10px;
+    }
+    .about .about-img{
+        padding-left:15px;
+        padding-right: 15px;
+    }
+}

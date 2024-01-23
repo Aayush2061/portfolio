@@ -2,7 +2,7 @@ import React from 'react'
 import './home.css'
 import { useTheme } from '../../context/ThemeContext'
 import Typewriter from 'typewriter-effect'
-import Resume from '../../assets/resume.txt' // Replace this with your resume file
+import Resume from '../../assets/resume.pdf' // Replace this with your resume file
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoIosSunny } from "react-icons/io";
 import { Fade } from 'react-reveal'
@@ -21,11 +21,11 @@ const Home = () => {
         </div>
         <div className="container home-content">
           <Fade top>
-            <h2>Hi 👋 I'm a</h2>
+            <h2>Hi, I'm a</h2>
             <h1>
               <Typewriter
                 options={{
-                  strings: ['Web Developer !', 'Full Stack Developer !', 'Mern Stack Developer !'],
+                  strings: ['Web Developer !', 'MERN Stack Developer !'],
                   autoStart: true,
                   loop: true,
                 }}
@@ -34,7 +34,14 @@ const Home = () => {
           </Fade>
           <Fade bottom>
             <div className='home-buttons'>
-              <button className='btn btn-hire'>Hire Me</button>
+              <a
+                className='btn btn-hire'
+                href="https://api.whatsapp.com/send?phone=9765440712"
+                rel='noreferrer'
+                target='_blank'
+              >
+                Hire Me
+              </a>
               <a className='btn btn-cv' href={Resume} download="Aayush.pdf">My Resume</a>
             </div>
           </Fade>

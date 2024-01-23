@@ -1,4 +1,5 @@
 .education {
+    margin-top: 100px;
     margin: 50px 0;
     margin-left: 150px;
     padding: 100px 0px;
@@ -25,4 +26,25 @@
 .education .vertical-timeline-element-subtitle {
     color: #1e1e2c;
     font-size: 15px;
+}
+.vertical-timeline::before {
+    background-color: #001F3F !important; 
+}
+
+ /* ============responsive========== */
+@media(max-width:600px){
+    .education{
+        margin: 0px;
+        padding: 0;
+        width: 100vw;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .education h2{
+        padding-top: 20px;
+    }
+    .education hr{
+        width: 300px;
+        margin-bottom: 10px;
+    }
 }

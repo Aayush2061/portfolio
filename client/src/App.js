@@ -11,6 +11,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from './context/ThemeContext';
 import ParticlesBackground from './components/tsparticles/ParticlesBackground';
 import Fade from 'react-reveal/Fade'
+// import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
 	const [theme] = useTheme();
@@ -20,13 +21,14 @@ function App() {
 			<ParticlesBackground />
 			<div id={theme}>
 				<Layout />
-				<div className="container about-container">
+				<div className="container">
 					<About />
 					<Education />
 					<Techstack />
 					<Projects />
 					{/* <WorkExp /> */}
 					<Contacts />
+
 				</div>
 				<Fade>
 					<div className="footer pb-3 ms-3">

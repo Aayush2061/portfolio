@@ -6,27 +6,31 @@ import { useState } from 'react';
 import "./layout.css"
 import Menus from '../Menus/Menus';
 import ParticlesBackground from '../tsparticles/ParticlesBackground';
+import { CiMenuBurger } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
+import MobileNav from '../MobileNav/MobileNav';
 const Layout = () => {
-    const [toggle, setToggle] = useState(true);
+    const [activeNavbar, setActiveNavbar] = useState(true);
 
     //change toggle
     const handleToggle = () => {
-        setToggle(!toggle)
+        setActiveNavbar(!activeNavbar);
     }
     return (
         <>
+            <MobileNav />
             <div className='sidebar-section'>
-                <div className={toggle ? 'sidebar-toggle sidebar' : 'sidebar'}>
+                <div className={activeNavbar ? 'active-sidebar' : 'non-active-sidebar'}>
                     <div className='sidebar-toggle-icons'>
                         <p onClick={handleToggle}>
                             {
-                                toggle ? (<GoSidebarExpand size={30} />) : (<GoSidebarCollapse size={30} />)
+                                activeNavbar ? (<IoMdClose size={30} />) : (<CiMenuBurger size={30} />)
                             }
 
                         </p>
                     </div>
                     {/* <ParticlesBackground /> */}
-                    <Menus toggle={toggle} />
+                    <Menus activeNavbar={activeNavbar} />
                 </div>
                 <div className='container'>
                     <Home />
@@ -37,3 +41,25 @@ const Layout = () => {
 };
 
 export default Layout;
+// return (
+//     <>
+//         <div className='sidebar-section'>
+//             <div className={toggle ? 'sidebar-toggle sidebar' : 'sidebar'}>
+//                 <div className='sidebar-toggle-icons'>
+//                     <p onClick={handleToggle}>
+//                         {
+//                             toggle ? (<GoSidebarExpand size={30} />) : (<GoSidebarCollapse size={30} />)
+//                         }
+
+//                     </p>
+//                 </div>
+//                 {/* <ParticlesBackground /> */}
+//                 <Menus toggle={toggle} />
+//             </div>
+//             <div className='container'>
+//                 <Home />
+//             </div>
+//         </div >
+//     </>
+// )
+// };

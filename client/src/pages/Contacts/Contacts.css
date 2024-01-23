@@ -86,3 +86,23 @@ textarea:focus {
     color: #1e1e2c;
     transition: 0.1s;
 }
+
+/* =================responsive================= */
+@media(max-width:600px){
+    .contacts{
+        margin: 10px;
+        margin-bottom: 60px;
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contacts .card2{
+        margin: 0;
+    }
+    .contacts .card2 h6{
+        margin-left: 25vw;
+    }
+    .contacts .card .row{
+        margin-right: 0px;
+    }
+}
